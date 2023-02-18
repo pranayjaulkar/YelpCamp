@@ -1,0 +1,50 @@
+<% layout('layouts/boilerplate') %>
+<div class="contianer mt-5">
+  <div class="row">
+    <div class="col-sm-6 offset-sm-3 col-lg-4 offset-lg-4">
+      <div class="card shadow">
+        <img
+          src="https://res.cloudinary.com/dphpgb4hg/image/upload/v1675238719/Yelp-Camp/fbmosnoonxr7zyzg0gu9.jpg"
+          alt=""
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Login</h5>
+          <form
+            action="/users/login"
+            class="validated-form"
+            novalidate
+            method="POST"
+          >
+            <div class="my-3">
+              <label class="form-label" for="username">Username</label>
+              <input
+                class="form-control"
+                type="text"
+                id="username"
+                name="username"
+                autofocus
+                required
+              />
+              <div class="valid-feedback">Looks good!</div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="password">password</label>
+              <input
+                class="form-control"
+                type="password"
+                id="password"
+                name="password"
+                required
+              />
+              <div class="valid-feedback">Looks good!</div>
+            </div>
+            <div class="d-grid gap-2">
+              <button class="btn btn-success">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
